@@ -1,0 +1,197 @@
+:root {
+  --space-black: #020817;
+  --deep-space: #071226;
+  --midnight-blue: #0B1F3A;
+  --orbit-blue: #1D4ED8;
+  --electric-blue: #3B82F6;
+  --sky-blue: #60A5FA;
+  --color-branco: #FFFFFF;
+  --cyan-glow: #22D3EE;
+  --neon-light: #93C5FD;
+  --text-primary: #FFFFFF;
+  --text-secondary: #CBD5E1;
+  --text-muted: #94A3B8;
+  --card-bg: rgba(15, 23, 42, 0.8);
+  --border-color: rgba(96, 165, 250, 0.2);
+  --gradient-space: linear-gradient(135deg,#020817 0%,#071226 50%,#0B1F3A 100%);
+  --gradient-glow: linear-gradient(90deg,#1D4ED8,#22D3EE);
+
+}
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.hero {
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-hero {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding-inline: 50px;
+    position: absolute; 
+    top: 0%;
+    width: 100%;
+}
+
+.logo {
+    height: 150px; 
+    width: 300px;
+    padding-top: 30px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+.menu-list {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    justify-content: center;
+    padding-left: 170px;
+}
+
+.menu-list a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.menu-list a:hover {
+    color: var(--orbit-blue);
+}
+
+.container {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .2)),url(../images/Gemini_Generated_Image_2dvr0i2dvr0i2dvr.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+    height: 100dvh;
+    padding-top: 150px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+ 
+
+.box {
+    color: var(--color-branco);
+    margin-inline: 30px;
+    margin-bottom: 30px;
+    margin-left: 100px;
+    padding-top: 80px;
+}
+
+.box h2 {
+    font-size: 20px;
+}
+  
+.box h1{
+    font-size: 35px;
+}
+
+.box p {
+    
+}
+
+.box_img img {
+
+}
+
+
+
+
+.hero1 {
+    background-color: var(--space-black);
+    margin-inline: auto;
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    color: var(--color-branco);
+    
+}
+
+.container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+    
+}
+
+.container1 img {
+    height: 200px;
+    width: 200px; 
+}
+
+.subtitle {
+    margin-top: 10px;
+}
+
+.card {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-inline: 20px;
+    border: 2px solid var(--color-white);
+    border-radius: 10px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.08);
+    margin-bottom: 100px;
+    width: 250px;
+    padding: 8px;
+    transition: .5s;
+}
+
+.card:hover{
+    border: solid 2px var(--neon-light);
+    scale: 1.1;
+}
+
+
+.card h3 {
+    margin-bottom: 15px;
+
+}
+
+.card img {
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+footer {
+    background-color: var(--color-white);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
