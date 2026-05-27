@@ -47,15 +47,27 @@ html{
     width: 100%;
 }
 
+.logoDiv {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding-inline: 50px;
+    position: absolute; 
+    top: 0%;
+    width: 100%;
+}
+
 .logo {
-    height: 150px; 
-    width: 300px;
+    height: 15dvh; 
+    width: 25dvh;
     padding-top: 30px;
 }
 
 nav{
     display: flex;
     justify-content: center;
+    padding-left: 4dvh;
+    padding-top: 25px;
 }
 
 .menu-list {
@@ -64,6 +76,7 @@ nav{
     list-style: none;
     justify-content: center;
     padding-left: 170px;
+    font-size: 15px;
 }
 
 .menu-list a {
@@ -79,7 +92,7 @@ nav{
 }
 
 .container {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, .2)),url(../images/Gemini_Generated_Image_2dvr0i2dvr0i2dvr.png);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .2)),url(../images/Gemini_Generated_Image_tz1dmstz1dmstz1d.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
