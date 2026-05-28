@@ -1,20 +1,20 @@
 :root {
-  --space-black: #020817;
-  --deep-space: #071226;
-  --midnight-blue: #0B1F3A;
-  --orbit-blue: #1D4ED8;
-  --electric-blue: #3B82F6;
-  --sky-blue: #60A5FA;
-  --color-branco: #FFFFFF;
-  --cyan-glow: #22D3EE;
-  --neon-light: #93C5FD;
-  --text-primary: #FFFFFF;
-  --text-secondary: #CBD5E1;
-  --text-muted: #94A3B8;
-  --card-bg: rgba(15, 23, 42, 0.8);
-  --border-color: rgba(96, 165, 250, 0.2);
-  --gradient-space: linear-gradient(135deg,#020817 0%,#071226 50%,#0B1F3A 100%);
-  --gradient-glow: linear-gradient(90deg,#1D4ED8,#22D3EE);
+    --space-black: #020817;
+    --deep-space: #071226;
+    --midnight-blue: #0B1F3A;
+    --orbit-blue: #1D4ED8;
+    --electric-blue: #3B82F6;
+    --sky-blue: #60A5FA;
+    --color-branco: #FFFFFF;
+    --cyan-glow: #22D3EE;
+    --neon-light: #93C5FD;
+    --text-primary: #FFFFFF;
+    --text-secondary: #CBD5E1;
+    --text-muted: #94A3B8;
+    --card-bg: rgba(15, 23, 42, 0.8);
+    --border-color: rgba(96, 165, 250, 0.2);
+    --gradient-space: linear-gradient(135deg, #020817 0%, #071226 50%, #0B1F3A 100%);
+    --gradient-glow: linear-gradient(90deg, #1D4ED8, #22D3EE);
 }
 
 * {
@@ -37,6 +37,7 @@ html {
 }
 
 .header-hero {
+    background-color: var(--deep-space);
     height: 100px;
     display: flex;
     align-items: center;
@@ -54,6 +55,7 @@ html {
     padding-inline: 10px;
     position: static;
     width: auto;
+    padding-bottom: 30px;
 }
 
 .logo {
@@ -88,21 +90,32 @@ nav {
     cursor: pointer;
     transition: 0.3s;
     font-weight: bold;
+    padding-bottom: 8px;
 }
 
 .menu-list a:hover {
     color: var(--orbit-blue);
+    border-bottom: 3px solid var(--orbit-blue);
 }
 
-.menu-btn {
+.menu-list a:hover::after {
+    width: 100%;
+}
+
+
+.menu-btn,
+.btn-sm {
     background-color: var(--orbit-blue);
     color: var(--color-branco);
     padding: 8px 16px;
-    border-radius: 8px;
+    border-radius: 30PX;
     transition: 0.3s;
+    cursor: pointer;
+    text-decoration: none;
 }
 
-.menu-btn:hover {
+.menu-btn:hover,
+.btn-sm:hover {
     background-color: var(--cyan-glow);
     color: var(--color-branco);
 }
@@ -114,8 +127,12 @@ nav {
     height: 100px;
 }
 
+.box P {
+    margin-bottom: 5%;
+}
+
 .container {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, .2)),url(../images/Gemini_Generated_Image_tz1dmstz1dmstz1d.png);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .2)), url(../images/ChatGPT\ Image\ 28_05_2026\,\ 13_29_01.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -149,7 +166,7 @@ nav {
 }
 
 .hero1 {
-    background: linear-gradient(160deg,#020817 10%,#081427 35%,#0B1F3A 55%,#1D4ED8 80%,#3B82F6 100%);
+    background: linear-gradient(160deg, #020817 10%, #081427 35%, #0B1F3A 55%, #1D4ED8 80%, #3B82F6 100%);
     margin-inline: auto;
     height: 100dvh;
     width: 100%;
@@ -167,19 +184,21 @@ nav {
     align-items: center;
     justify-content: center;
     gap: 30px;
-    margin-top: 50px;
+    margin-top: 10%;
 }
 
 .container1 img {
     height: 200px;
     width: 200px;
+    margin-bottom: 5%;
 }
 
 .subtitle {
-    margin-top: 10px;
+    margin-top: 2%;
 }
 
 .card {
+    background: rgba(255, 255, 255, 0.041);
     display: flexbox;
     justify-content: center;
     align-items: center;
@@ -187,7 +206,7 @@ nav {
     margin-inline: 20px;
     border: 2px solid var(--color-white);
     border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
     margin-bottom: 100px;
     width: 250px;
     padding: 8px;
@@ -310,9 +329,6 @@ nav {
     text-align: center;
 }
 
-
-
-
 ul {
     margin-left: 20px;
 }
@@ -324,4 +340,158 @@ footer {
     justify-content: center;
     align-items: center;
     font-size: 20px;
+}
+
+.TRIPULAÇÃO {
+    width: 100%;
+    padding: 80px;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    background:
+        linear-gradient(90deg, #020817, #071226, #020817);
+}
+
+.tipos-info {
+    min-width: 250px;
+}
+
+.tipos-info h2 {
+    color: white;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.tipos-info p {
+    color: #94A3B8;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.linha {
+    width: 60px;
+    height: 4px;
+    background: #2563EB;
+    border-radius: 10px;
+}
+
+.cards-pessoas {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.pessoa {
+    width: 200px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.pessoa:hover {
+    transform: translateY(-8px);
+}
+
+
+.pessoa img {
+    width: 100%;
+    height: 170px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.pessoa h3 {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.publico-alvo {
+    width: 100%;
+    min-height: 100dvh;
+    padding: 100px 120px;
+
+    background:
+        linear-gradient(135deg, #020817 0%, #071226 50%, #0B1F3A 100%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+}
+
+.publico-header {
+    max-width: 700px;
+}
+
+.publico-header h2 {
+    color: var(--cyan-glow);
+    font-size: 14px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.publico-header h1 {
+    color: var(--color-branco);
+    font-size: 60px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    font-family: 'Playfair Display', serif;
+}
+
+.publico-header p {
+    color: var(--text-secondary);
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.publico-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 100%;
+}
+
+.publico-card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 30px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    transition: 0.4s;
+}
+
+.publico-card:hover {
+    transform: translateX(15px);
+    border-color: var(--cyan-glow);
+}
+
+.publico-card img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    padding: 18px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: 0.4s;
+}
+
+.publico-card:hover img {
+    background: rgba(34, 211, 238, 0.12);
+    border-color: var(--cyan-glow);
+}
+
+.publico-card h3 {
+    color: var(--color-branco);
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.publico-card p {
+    color: var(--text-muted);
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 700px;
 }
