@@ -102,9 +102,7 @@ nav {
     width: 100%;
 }
 
-
 .menu-btn,
-
 .btn-sm {
     background-color: var(--orbit-blue);
     color: var(--color-branco);
@@ -148,9 +146,9 @@ nav {
 .box {
     color: var(--color-branco);
     margin-inline: 30px;
-    margin-bottom: 30px;
-    margin-left: 100px;
-    padding-top: 80px;
+    margin-bottom: 3%;
+    margin-left: 7%;
+    margin-top: 2%;
 }
 
 .box h2 {
@@ -167,10 +165,8 @@ nav {
 }
 
 .hero1 {
-    background: linear-gradient(160deg, #020817 10%, #081427 35%, #0B1F3A 55%, #1D4ED8 80%, #3B82F6 100%);
+    background: linear-gradient(160deg, #020817 10%, #081427 35%, #0B1F3A 55%, #1946c0 90%, #3B82F6 100%);
     margin-inline: auto;
-    height: 100dvh;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -185,17 +181,20 @@ nav {
     align-items: center;
     justify-content: center;
     gap: 30px;
-    margin-top: 10%;
+    margin-top: 3%;
 }
 
 .container1 img {
     height: 200px;
     width: 200px;
-    margin-bottom: 5%;
 }
 
 .subtitle {
-    margin-top: 2%;
+    margin-top: 5%;
+}
+
+.subtitle p {
+    color: var(--cyan-glow);
 }
 
 .card {
@@ -228,8 +227,6 @@ nav {
     padding: 5px;
 }
 
-
-
 .hero2 {
     background: linear-gradient(160deg, #0B1F3A 0%, #071226 40%, #020817 100%);
     min-height: 70dvh;
@@ -251,7 +248,7 @@ nav {
     width: 100%;
     padding-inline: 80px;
     text-align: center;
-    margin-top: 0;
+    margin-bottom: 10%;
 }
 
 .satelite-decorativo {
@@ -334,7 +331,7 @@ ul {
     margin-left: 20px;
 }
 
-.TRIPULAÇÃO {
+.tripulacao{
     width: 100%;
     padding: 80px;
     display: flex;
