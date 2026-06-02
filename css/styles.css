@@ -481,3 +481,116 @@ ul {
     line-height: 1.8;
     max-width: 700px;
 }
+
+.beneficios {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .55)), url(../images/9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 80px;
+    gap: 60px;
+}
+
+.beneficios-header {
+    text-align: center;
+    color: var(--color-branco);
+}
+
+.beneficios-header h2 {
+    color: var(--cyan-glow);
+    font-size: 20px;
+    letter-spacing: 5px;
+    margin-bottom: 16px;
+}
+
+.beneficios-header h1 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.beneficios-cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.beneficio-card {
+    background: rgba(15, 23, 42, 0.75);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 40px 30px;
+    max-width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    transition: 0.4s;
+}
+
+.beneficio-card:hover {
+    border-color: var(--cyan-glow);
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px rgba(34, 211, 238, 0.15);
+}
+
+.beneficio-card h3 {
+    color: var(--color-branco);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.beneficio-card p {
+    color: var(--text-muted);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.aplicDiv {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, .2)), url(../images/moon2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    min-height: 100dvh;
+    padding-top: 150px  80px 80px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.boxApli {
+    color: var(--color-branco);
+    margin-inline: 30px;
+    margin-bottom: 3%;
+    margin-left: 7%;
+    margin-top: 2%;
+}
+
+.boxApli h2{
+    color: var(--cyan-glow);
+    font-size: 18px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.boxApli h1 {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.boxApli p {
+    font-size: 18px;
+    color: var(--text-primary);
+    line-height: 1.8;
+    margin-top: 20px;
+}
