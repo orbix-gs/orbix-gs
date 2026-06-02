@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <section class="quiz-orbix">
+    <div class="quiz-container">
+
+        <div class="quiz-header">
+            <h2>QUIZ ORBIX</h2>
+            <h1>Quanto você sabe sobre o futuro da exploração espacial?</h1>
+            <p>Responda às 10 perguntas e descubra seu nível de conhecimento sobre a ORBIX.</p>
+        </div>
+        <div class="pergunta">
+            <h3>Digite seu nome:</h3>
+            <input type="text" id="nome" placeholder="Seu nome" required>
+        </div>
+        <form id="quizForm">
+
+            <div class="pergunta">
+                <h3>1. Qual problema espacial a ORBIX busca resolver prioritariamente?</h3>
+                <select required>
+                    <option value="">Selecione</option>
+                    <option>A. Falta de astronautas em missões espaciais</option>
+                    <option>B. Consumo excessivo de combustível dos foguetes</option>
+                    <option data-correta="true">C. Acúmulo de detritos e riscos em órbita</option>
+                    <option>D. Falta de telescópios espaciais</option>
+                </select>
+            </div>
+
+            <div class="pergunta">
+                <h3>2. Qual tecnologia da ORBIX é responsável por prever colisões em órbita?</h3>
+                <select required>
+                    <option value="">Selecione</option>
+                    <option>A. Blockchain</option>
+                    <option data-correta="true">B. Inteligência Artificial</option>
+                    <option>C. Computação Quântica</option>
+                    <option>D. Impressão 3D</option>
+                </select>
+            </div>
+
+            <div class="pergunta">
+                <h3>3. Como os data centers orbitais da ORBIX reduzem o consumo de energia?</h3>
+                <select required>
+                    <option value="">Selecione</option>
+                    <option>A. Utilizando motores nucleares</option>
+                    <option>B. Armazenando menos dados</option>
+                    <option data-correta="true">C. Aproveitando energia solar e resfriamento natural do espaço</option>
+                    <option>D. Operando apenas à noite</option>
+                </select>
+            </div>
+
+            <div class="pergunta">
+                <h3>4. Qual é a principal vantagem de remover lixo espacial?</h3>
+                <select required>
+                    <option value="">Selecione</option>
+                    <option>A. Melhorar a internet terrestre</option>
+                    <option data-correta="true">B. Aumentar a segurança de satélites e missões espaciais</option>
+                    <option>C. Reduzir custos de energia</option>
+                    <option>D. Facilitar viagens turísticas</option>
+                </select>
+            </div>
+
+            <div class="pergunta">
+                <h3>5. O sistema de Água Orbital desenvolvido pela ORBIX tem como objetivo:</h3>
+                <select required>
+                    <option value="">Selecione</option>
+                    <option data-correta="true">A. Captar, armazenar e reutilizar partículas congeladas no espaço</option>
+                    <option>B. Produzir combustível para foguetes</option>
+                    <option>C. Criar atmosferas artificiais</option>
+                    <option>D. Resfriar computadores terrestres</option>
+                </select>
+            </div>
+
+            <div class="pergunta">
+                <h3>6. Quem pode ser beneficiado pelas soluções da ORBIX?</h3>
+                <select required>
+                    <option value="">Selecione</option>
+                    <option>A. Apenas governos</option>
+                    <option>B. Apenas empresas privadas</option>
+                    <option data-correta="true">C. Governos, empresas, centros de pesquisa e operadoras de satélites</option>
+                    <option>D. Apenas centros de pesquisa</option>
+                </select>
+            </div>
+
+            <div class="pergunta">
+                <h3>7. Por que a utilização de Inteligência Artificial é importante para a ORBIX?</h3>
+                <select required>
+                    <option value="">Selecione</option>
+                    <option>A. Para substituir satélites antigos</option>
+                    <option>B. Para construir foguetes automaticamente</option>
+                    <option data-correta="true">C. Para analisar riscos e otimizar operações orbitais</option>
+                    <option>D. Para criar novos planetas artificiais</option>
+                </select>
+            </div>
+
+            <div class="pergunta">
+                <h3>8. Qual característica torna a ORBIX uma solução sustentável?</h3>
+                <select required>
+                    <option value="">Selecione</option>
+                    <option data-correta="true">A. Reutilização de recursos e uso de energia limpa</option>
+                    <option>B. Uso de combustíveis fósseis mais eficientes</option>
+                    <option>C. Coleta de lixo urbano</option>
+                    <option>D. Produção agrícola</option>
+                </select>
+            </div>
+
+            <div class="pergunta">
+                <h3>9. Qual serviço do dia a dia depende diretamente de uma infraestrutura orbital segura?</h3>
+                <select required>
+                    <option value="">Selecione</option>
+                    <option>A. Coleta de lixo urbano</option>
+                    <option data-correta="true">B. Sistemas de navegação e comunicação por satélite</option>
+                    <option>C. Distribuição de água</option>
+                    <option>D. Produção agrícola</option>
+                </select>
+            </div>
+
+            <div class="pergunta">
+                <h3>10. Se a ORBIX atingir seus objetivos, qual será um dos impactos esperados?</h3>
+                <select required>
+                    <option value="">Selecione</option>
+                    <option>A. Eliminar a necessidade de satélites</option>
+                    <option>B. Substituir a internet terrestre</option>
+                    <option data-correta="true">C. Tornar as operações espaciais mais seguras e eficientes</option>
+                    <option>D. Encerrar as missões espaciais</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btnQuiz">
+                FINALIZAR QUIZ
+            </button>
+
+        </form>
+
+        <div id="resultado"></div>
+    </div>
+</section>
+<script src="./js/quiz.js"></script>
+</body>
+</html>
